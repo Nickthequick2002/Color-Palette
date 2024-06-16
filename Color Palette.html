@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Palette</title>
+    <!--Style the boxes-->
+    <style> 
+        .color-box {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        #colorHistory {
+            margin-top: 20px;
+        }
+    </style>
+    <!-- Link to the JavaScript file -->
+    <script src="Color Palette.js" defer></script>
+</head>
+<body>
+    <h1>Color Palette</h1>
+    <!-- Div containing the color palette -->
+    <div id="palette">
+        <!-- Each color box triggers the chooseColor function with the respective color -->
+        <div class="color-box" style="background-color: red;" onclick="chooseColor('red')"></div>
+        <div class="color-box" style="background-color: green;" onclick="chooseColor('green')"></div>
+        <div class="color-box" style="background-color: blue;" onclick="chooseColor('blue')"></div>
+        <div class="color-box" style="background-color: yellow;" onclick="chooseColor('yellow')"></div>
+        <div class="color-box" style="background-color: orange;" onclick="chooseColor('orange')"></div>
+        <div class="color-box" style="background-color: purple;" onclick="chooseColor('purple')"></div>
+    </div>
+    <!-- Paragraph to display "Hello world!" in the chosen color -->
+    <p id="helloWorld"></p>
+    <!-- Div to display the history of chosen colors -->
+    <div id="colorHistory"></div>
+</body>
+</html>
